@@ -1,0 +1,36 @@
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+     url("../images/bg-hero.avif") no-repeat center;
+    background-size: cover;
+}
+.book-card {
+    transition: transform 0.3s ease;
+    box-shadow: 0.3s ease;
+}
+
+.book-card:hover {
+transform: translateY(-5px);
+box-shadow: 0 10 px 15px -3px rgb(0, 0, 0 / 0.1), 0 4px 6px -4px rgb(0, 0, 0 / 0.1);
+}
+
+.book-card  .open-detail-trigger {
+    cursor : pointer;
+}
+
+.modal {
+    transition: opacity 0.3s ease-in-out,visibility 0.3s ease-in-out;
+}
+
+.modal-content {
+    transform: scale(0.95);
+    transition: transform 0.3 ease-in-out;
+}
+
+.modal.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal.active .modal-content{
+    transform: scale(1);
+}
